@@ -42,6 +42,7 @@ public class TestMovieManagerTestNonEmpty {
         Assertions.assertArrayEquals(expected, actual);
     }
 
+    
     @Test
     public void shouldGiveLastAddIfLessTen() {
         MovieManager manager = new MovieManager();
