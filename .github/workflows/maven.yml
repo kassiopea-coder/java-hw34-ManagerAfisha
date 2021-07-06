@@ -3,7 +3,12 @@
 
 name: Java CI # как называется Workflow
 
-on: [push] # когда срабатывает (на push)
+on:
+  push:
+    branches: [ master, manager ]
+  pull_request:
+    branches: [ master, manager]
+
 
 jobs: # какие задачи делаем
   build: # сборка
